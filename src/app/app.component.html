@@ -1,0 +1,59 @@
+<app-header></app-header>
+
+<!-- ng-template example -->
+<!-- <ng-template #personTemplate let-person="data">
+  <h1 class="bg-primary"> {{person.name}}</h1>
+</ng-template> -->
+
+
+<!-- <ng-template [ngTemplateOutlet]="personTemplate" [ngTemplateOutletContext]="{data: persons[1]}">
+</ng-template>
+
+<div *ngFor="let person of persons">
+  <ng-template [ngTemplateOutlet]="personTemplate" [ngTemplateOutletContext]="{data: person}"></ng-template>
+</div> -->
+
+<!-- count-down -->
+
+<!-- <countdown [config]="{leftTime: 60}" style="color: rgb(224, 57, 57); font-size: 1.5rem; padding: .6rem; background-color: aquamarine; border-radius: .5rem;"></countdown> -->
+
+<div style="margin: 2rem;">
+  <nz-timeline nzMode="right">
+    <nz-timeline-item >
+      <div style="padding-top:2.4rem;margin-bottom: -2.4rem;">
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+      </div>
+
+    </nz-timeline-item>
+    <nz-timeline-item>
+      <div style="padding-top:2.4rem;margin-bottom: -1.6rem;">
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+      </div>
+    </nz-timeline-item>
+    <nz-timeline-item class="bigger-item" [nzDot]="dotTemplate1" nzColor="red">
+      <div style="padding-top:1.3rem;">
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+        <p>Create a services site 2015-09-01</p>
+      </div>
+    </nz-timeline-item>
+    <nz-timeline-item [nzDot]="dotTemplate2">Network problems being solved 2015-09-01</nz-timeline-item>
+  </nz-timeline>
+  <ng-template #dotTemplate1>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+  </ng-template>
+
+  <ng-template #dotTemplate2>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 24px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+  </ng-template>
+</div>
